@@ -31,6 +31,9 @@ gem 'react-rails'
 # react-on-rails
 gem "react_on_rails", "~> 5"
 
+# devise
+gem 'devise'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

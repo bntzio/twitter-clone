@@ -1,0 +1,22 @@
+<div class="body-wrapper">
+  <h2>Update profile</h2>
+  <%= form_for @user, url: "/profile" do |f| %>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <%= f.text_field :first_name, placeholder: "Jensen" %>          
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <%= f.text_field :last_name, placeholder: "Ackles" %>          
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn right">Save</button>
+        </div>
+      </form>
+    </div>
+  <% end %>
+</div>
