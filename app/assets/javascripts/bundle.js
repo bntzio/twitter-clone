@@ -82,10 +82,28 @@
 	  _createClass(Main, [{
 	    key: "addTweet",
 	    value: function addTweet(tweetToAdd) {
-	      var newTweetsList = this.state.tweetsList;
-	      newTweetsList.unshift({ id: Date.now(), name: 'Guest', body: tweetToAdd });
+	      var _this2 = this;
 	
-	      this.setState({ tweetsList: newTweetsList });
+	      $.post("/tweets", { body: tweetToAdd }).success(function (savedTweet) {
+	
+	        var newTweetsList = _this2.state.tweetsList;
+	        newTweetsList.unshift(savedTweet);
+	
+	        _this2.setState({ tweetsList: newTweetsList });
+	      }).error(function (error) {
+	        return console.log(error);
+	      });
+	    }
+	  }, {
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      var _this3 = this;
+	
+	      $.ajax("/tweets").success(function (data) {
+	        return _this3.setState({ tweetsList: data });
+	      }).error(function (error) {
+	        return console.log(error);
+	      });
 	    }
 	  }, {
 	    key: "render",
