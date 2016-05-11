@@ -28,6 +28,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # react-rails
 gem 'react-rails'
 
+# react-on-rails
+gem "react_on_rails", "~> 5"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -19,3 +19,9 @@
 
 # Ignore redis binary dump (dump.rdb) files
  *.rdb
+
+# Ignore bundle.js.map
+/app/assets/javascripts/bundle.js.map
+
+# Ignore node_modules
+node_modules/
