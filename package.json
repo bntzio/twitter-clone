@@ -1,0 +1,22 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "Twitter clone, written in React, Flux, and Rails",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bntzio/twitter-clone.git"
+  },
+  "author": "bntzio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bntzio/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/bntzio/twitter-clone#readme"
+}
