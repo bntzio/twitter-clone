@@ -1,6 +1,6 @@
 export default class TweetBox extends React.Component {
 
-  sendTweet() {
+  sendTweet(event) {
     event.preventDefault();
     this.props.sendTweet(this.refs.tweetTextArea.value);
     this.refs.tweetTextArea.value = '';
