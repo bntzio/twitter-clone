@@ -1,6 +1,7 @@
 Twitter Clone
+=============
 
-![gif](http://giphy.com/gifs/l3977g57l3VvdAhSo/html5)
+![twitter-clone](http://i.imgur.com/LlBeGd3.png?1)
 
 **Twitter Clone** is Twitter clone made in React along with Rails and Flux architecture.
 
